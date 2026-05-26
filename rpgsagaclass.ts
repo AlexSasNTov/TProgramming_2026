@@ -25,15 +25,15 @@ class Game_Actor extends Game_BattlerBase {
     constructor(name: string) {
         super();                        // Вызов конструктора родителя
         this.name = name;               // Имя воина
-        this._strength = 15;            // Переопределяем силу (воин сильнее)
-        this._hp = 100;                 // Переопределяем здоровье
+        this._strength = 15;            // Переопредение силы
+        this._hp = 100;                 // Переопределение здоровья 
     }
 
     // Метод для демонстрации
     showStats(): void {
         console.log(`Имя: ${this.name}`);
         console.log(`HP: ${this._hp}`);
-        console.log(`Сила: ${this.strength}`);  // Используем геттер из родителя
+        console.log(`Сила: ${this.strength}`);  // Геттер из родителя
     }
 }
 
